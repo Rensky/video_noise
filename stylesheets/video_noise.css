@@ -1,0 +1,197 @@
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../sass/video_noise.scss */
+body {
+  position: relative;
+  width: 100%;
+  height: 95vh;
+  background-color: #000;
+}
+
+/* line 10, ../sass/video_noise.scss */
+.bg-container {
+  position: relative;
+  width: 100%;
+  height: 98vh;
+  overflow: hidden;
+}
+/* line 16, ../sass/video_noise.scss */
+.bg-container iframe {
+  width: 100%;
+  height: 100%;
+}
+/* line 21, ../sass/video_noise.scss */
+.bg-container .noise {
+  position: absolute;
+  background-image: url(../img/noise.jpg);
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  -webkit-animation: noiseAnim 0.5s infinite linear alternate;
+  -moz-animation: noiseAnim 0.5s infinite linear alternate;
+  -o-animation: noiseAnim 0.5s infinite linear alternate;
+  animation: noiseAnim 0.5s infinite linear alternate;
+}
+@-webkit-keyframes noiseAnim {
+  0% {
+    background-position: 10px 200px;
+  }
+  20% {
+    background-position: -50px 0;
+  }
+  40% {
+    background-position: 100px -10px;
+  }
+  60% {
+    background-position: 0 -150px;
+  }
+  80% {
+    background-position: -100px -30px;
+  }
+  100% {
+    background-position: 160px -60px;
+  }
+}
+@-moz-keyframes noiseAnim {
+  0% {
+    background-position: 10px 200px;
+  }
+  20% {
+    background-position: -50px 0;
+  }
+  40% {
+    background-position: 100px -10px;
+  }
+  60% {
+    background-position: 0 -150px;
+  }
+  80% {
+    background-position: -100px -30px;
+  }
+  100% {
+    background-position: 160px -60px;
+  }
+}
+@-o-keyframes noiseAnim {
+  0% {
+    background-position: 10px 200px;
+  }
+  20% {
+    background-position: -50px 0;
+  }
+  40% {
+    background-position: 100px -10px;
+  }
+  60% {
+    background-position: 0 -150px;
+  }
+  80% {
+    background-position: -100px -30px;
+  }
+  100% {
+    background-position: 160px -60px;
+  }
+}
+@keyframes noiseAnim {
+  0% {
+    background-position: 10px 200px;
+  }
+  20% {
+    background-position: -50px 0;
+  }
+  40% {
+    background-position: 100px -10px;
+  }
+  60% {
+    background-position: 0 -150px;
+  }
+  80% {
+    background-position: -100px -30px;
+  }
+  100% {
+    background-position: 160px -60px;
+  }
+}
+/* line 71, ../sass/video_noise.scss */
+.content-container {
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  display: block;
+  font-size: 92px;
+  color: #f1ebe5;
+  text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(to bottom, #ece4d9 0%, #e9dfd1 100%);
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 20px;
+  z-index: 200;
+  padding: 20px;
+}
